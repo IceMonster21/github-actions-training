@@ -3,6 +3,7 @@ on:
   workflow_call:
     inputs:
       who-to-greet:
+        description: "Who needs to be greated"
         type: string
         default: World
         required: true
