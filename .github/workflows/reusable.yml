@@ -7,7 +7,9 @@ on:
         default: World
         required: true
     outputs:
-      current-time: ${{ jobs.reusable-job.outputs.current-time }}
+      current-time: 
+        description: "Current timestamp"
+        value: ${{ jobs.reusable-job.outputs.current-time }}
 jobs:
   reusable-job:
     runs-on: ubuntu-latest
